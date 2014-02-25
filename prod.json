@@ -1,0 +1,36 @@
+{
+	"prod":[
+		{
+			"category": "drink",
+			"list":[
+				{ "name":"Cola" , "price":140 },
+				{ "name":"Apple juice" , "price":135 },
+				{ "name":"Orange Juice" , "price":140 },
+				{ "name":"Milk" , "price":110 },
+				{ "name":"Coffee" , "price":220 },
+				{ "name":"Water" , "price":99 }
+			]
+		},
+		{
+			"category": "Food",
+			"list":[
+				{ "name":"Ice Cream" , "price":370 },
+				{ "name":"Macaron" , "price":85 },
+				{ "name":"Cheese" , "price":355 },
+				{ "name":"Butter" , "price":110 },
+				{ "name":"spaghetti" , "price":780 }
+			]
+		},
+		{
+			"category": "Fruit",
+			"list":[
+				{ "name":"Apple" , "price":150 },
+				{ "name":"Banana" , "price":200 },
+				{ "name":"Lemon" , "price":105 },
+				{ "name":"Mango" , "price":650 },
+				{ "name":"Melon" , "price":430 }
+			]
+		}
+	]
+
+}

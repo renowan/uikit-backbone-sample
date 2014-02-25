@@ -1,0 +1,329 @@
+
+/*
+ * Component:       Docs
+ * Description:     Defines styles for the UIkit documentation
+ ========================================================================== */
+
+
+/* Fonts
+ ========================================================================== */
+
+@font-face {
+    font-family: 'ProximaNovaLight';
+    src: url('../fonts/proximanova-light-webfont.eot');
+    src: url('../fonts/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/proximanova-light-webfont.woff') format('woff'),
+        url('../fonts/proximanova-light-webfont.ttf') format('truetype'),
+        url('../fonts/proximanova-light-webfont.svg#ProximaNovaLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, h1, h2, h3, h4, h5, h6,
+.uk-navbar-nav > li > a {
+    font-family: "ProximaNovaLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #666;
+}
+
+
+/* Base
+ ========================================================================== */
+
+html {
+    overflow-y: scroll;
+    /*color: #fff;*/
+}
+
+
+/* Layout
+ ========================================================================== */
+
+
+.tm-background {
+    background: #252525;
+}
+
+
+.uk-button {
+    display: inline-block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: middle;
+    text-decoration: none;
+    text-align: center;
+    border: 0;
+    line-height: 28px;
+    min-height: 30px;
+    letter-spacing: normal;
+    padding: 0 12px;
+    background: #f7f7f7;
+    color: #666;
+    border: 1px solid rgba(0,0,0,.2);
+    border-bottom-color: rgba(0,0,0,.3);
+    background-origin: border-box;
+    background-image: -webkit-linear-gradient(top,#fff,#eee);
+    background-image: linear-gradient(to bottom,#fff,#eee);
+    border-radius: 4px;
+    text-shadow: 0 1px 0 #fff
+}
+
+.uk-button:hover,.uk-button:focus {
+    background-color: #fafafa;
+    color: #666;
+    outline: 0;
+    background-image: none
+}
+
+.uk-button:active,.uk-button.uk-active {
+    background-color: #f5f5f5;
+    color: #666;
+    border-color: rgba(0,0,0,.2);
+    border-top-color: rgba(0,0,0,.3);
+    background-image: none;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,.1)
+}
+
+.uk-button-primary {
+    background-color: #009dd8;
+    color: #fff;
+    background-image: -webkit-linear-gradient(top,#00b4f5,#008dc5);
+    background-image: linear-gradient(to bottom,#00b4f5,#008dc5);
+    border-color: rgba(0,0,0,.2);
+    border-bottom-color: rgba(0,0,0,.4);
+    text-shadow: 0 -1px 0 rgba(0,0,0,.2)
+}
+
+.uk-button-primary:hover,.uk-button-primary:focus {
+    background-color: #00aff2;
+    color: #fff;
+    background-image: none
+}
+
+.uk-button-primary:active,.uk-button-primary.uk-active {
+    background-color: #008abf;
+    color: #fff;
+    background-image: none;
+    border-color: rgba(0,0,0,.2);
+    border-top-color: rgba(0,0,0,.4);
+    box-shadow: inset 0 2px 4px rgba(0,0,0,.2)
+}
+
+.uk-button-success {
+    background-color: #82bb42;
+    color: #fff;
+    background-image: -webkit-linear-gradient(top,#9fd256,#6fac34);
+    background-image: linear-gradient(to bottom,#9fd256,#6fac34);
+    border-color: rgba(0,0,0,.2);
+    border-bottom-color: rgba(0,0,0,.4);
+    text-shadow: 0 -1px 0 rgba(0,0,0,.2)
+}
+
+.uk-button-success:hover,.uk-button-success:focus {
+    background-color: #8fce48;
+    color: #fff;
+    background-image: none
+}
+
+.uk-button-success:active,.uk-button-success.uk-active {
+    background-color: #76b430;
+    color: #fff;
+    background-image: none;
+    border-color: rgba(0,0,0,.2);
+    border-top-color: rgba(0,0,0,.4);
+    box-shadow: inset 0 2px 4px rgba(0,0,0,.2)
+}
+
+.uk-button-danger {
+    background-color: #d32c46;
+    color: #fff;
+    background-image: -webkit-linear-gradient(top,#ee465a,#c11a39);
+    background-image: linear-gradient(to bottom,#ee465a,#c11a39);
+    border-color: rgba(0,0,0,.2);
+    border-bottom-color: rgba(0,0,0,.4);
+    text-shadow: 0 -1px 0 rgba(0,0,0,.2)
+}
+
+.uk-button-danger:hover,.uk-button-danger:focus {
+    background-color: #e33551;
+    color: #fff;
+    background-image: none
+}
+
+.uk-button-danger:active,.uk-button-danger.uk-active {
+    background-color: #c91c37;
+    color: #fff;
+    background-image: none;
+    border-color: rgba(0,0,0,.2);
+    border-top-color: rgba(0,0,0,.4);
+    box-shadow: inset 0 2px 4px rgba(0,0,0,.2)
+}
+
+.uk-button:disabled {
+    background-color: #fafafa;
+    color: #999;
+    border-color: rgba(0,0,0,.2);
+    background-image: none;
+    box-shadow: none;
+    text-shadow: 0 1px 0 #fff
+}
+
+.uk-button-link,.uk-button-link:hover,.uk-button-link:focus,.uk-button-link:active,.uk-button-link.uk-active,.uk-button-link:disabled {
+    border-color: transparent;
+    background: 0 0;
+    box-shadow: none;
+    text-shadow: none
+}
+
+.uk-button-link {
+    color: #1d8acb
+}
+
+.uk-button-link:hover,.uk-button-link:focus,.uk-button-link:active,.uk-button-link.uk-active {
+    color: #0b5f90;
+    text-decoration: underline
+}
+
+.uk-button-link:disabled {
+    color: #999
+}
+
+.uk-button-link:focus {
+    outline: 1px dotted
+}
+
+.uk-button-mini {
+    min-height: 20px;
+    padding: 0 6px;
+    line-height: 18px;
+    font-size: 11px
+}
+
+.uk-button-small {
+    min-height: 25px;
+    padding: 0 10px;
+    line-height: 23px;
+    font-size: 12px
+}
+
+.uk-button-large {
+    min-height: 40px;
+    padding: 0 15px;
+    line-height: 38px;
+    font-size: 16px;
+    border-radius: 5px
+}
+
+.uk-button-group {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    letter-spacing: -.31em;
+    white-space: nowrap
+}
+
+.uk-button-group>* {
+    display: inline-block
+}
+
+.uk-button-dropdown {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative
+}
+
+.uk-button-group>.uk-button:not(:first-child):not(:last-child),.uk-button-group>div:not(:first-child):not(:last-child) .uk-button {
+    border-radius: 0
+}
+
+.uk-button-group>.uk-button:first-child,.uk-button-group>div:first-child .uk-button {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0
+}
+
+.uk-button-group>.uk-button:last-child,.uk-button-group>div:last-child .uk-button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0
+}
+
+.uk-button-group>.uk-button:nth-child(n+2),.uk-button-group>div:nth-child(n+2) .uk-button {
+    margin-left: -1px
+}
+
+.uk-button-group .uk-button:active {
+    position: relative
+}
+
+
+/*
+ * Blocks
+ */
+
+.tm-middle,
+.tm-section,
+.tm-footer {
+    padding: 50px 0;
+}
+
+
+.uk-width-1-6,
+.uk-width-1-5,
+.uk-width-1-4{
+	border-right: 1px #ddd solid;
+	min-height: 300px;
+}
+
+.last-block{
+	border-right: 0;
+}
+
+.tm-article-subtitle {
+	padding-left: 6px;
+	border-left: 3px solid #1FA2D6;
+	font-size: 16px;
+	line-height: 16px;
+}
+
+#container{
+	margin: 10px 0 0 0;
+}
+
+
+#main-title{
+	margin: 20px 0 50px 0;
+}
+
+#prod-list li{
+	margin-bottom: 10px;
+	/*height: 30px;*/
+}
+#cart-list li{
+	margin-bottom: 8px;
+}
+.products-name{
+	width: 130px;
+	display: inline-block;
+}
+.products-price{
+	width: 70px;
+	display: inline-block;
+	color: #cc0000;
+}
+.label-prod{
+	width: 100px;
+	display: inline-block;
+}
+.label-val{
+	width: 40px;
+	color: #cc0000;
+	display: inline-block;
+}
+
+.label-prod.total,.label-price.total{
+	font-weight: 800;
+	font-family: sans-serif;
+	color: green;
+}
+.label-price{
+	width: 60px;
+	display: inline-block;
+}
